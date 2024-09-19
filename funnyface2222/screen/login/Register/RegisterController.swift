@@ -125,7 +125,7 @@ class RegisterController: UIViewController {
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.white]
         )
         confirmPasswordTextField.attributedPlaceholder = NSAttributedString(
-            string: "pass word again",
+            string: "password again",
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.white]
         )
         hideKeyboardWhenTappedAround()

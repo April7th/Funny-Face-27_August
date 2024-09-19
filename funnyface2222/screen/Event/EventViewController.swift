@@ -463,7 +463,8 @@ extension EventViewController: UITableViewDataSource {
             cell.buttonNam.addGestureRecognizer(clickImageNam)
             let tapNam = UITapGestureRecognizer(target: self, action: #selector(tapAnhNam))
             cell.buttonNam.addGestureRecognizer(tapNam)
-            //_____________________________________________________________________________
+            
+            
             let url_nam = URL(string: self.dataDetail[0].link_nam_goc ?? "")
             let processor_nam = DownsamplingImageProcessor(size: cell.image1Nam.bounds.size)
                          |> RoundCornerImageProcessor(cornerRadius: 20)

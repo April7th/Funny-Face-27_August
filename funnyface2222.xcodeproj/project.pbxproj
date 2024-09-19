@@ -34,6 +34,8 @@
 		B78524C42C7DA4A8000028B2 /* UserImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78524C32C7DA4A8000028B2 /* UserImageController.swift */; };
 		B78524C82C7DAF88000028B2 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78524C62C7DAF88000028B2 /* ImageCollectionViewCell.swift */; };
 		B78524C92C7DAF88000028B2 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B78524C72C7DAF88000028B2 /* ImageCollectionViewCell.xib */; };
+		B7AC8A852C9C2F5F00DE2E4A /* newVideo2Swap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC8A832C9C2F5F00DE2E4A /* newVideo2Swap.swift */; };
+		B7AC8A862C9C2F5F00DE2E4A /* newVideo2Swap.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7AC8A842C9C2F5F00DE2E4A /* newVideo2Swap.xib */; };
 		B7D9087C2C60F87700458A21 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D9087A2C60F87700458A21 /* ReportViewController.swift */; };
 		B7D9087D2C60F87700458A21 /* ReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7D9087B2C60F87700458A21 /* ReportViewController.xib */; };
 		B7F645392C5CCB4700261A02 /* ListToProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7F645382C5CCB4700261A02 /* ListToProfileViewController.xib */; };
@@ -261,6 +263,8 @@
 		B78524C32C7DA4A8000028B2 /* UserImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImageController.swift; sourceTree = "<group>"; };
 		B78524C62C7DAF88000028B2 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		B78524C72C7DAF88000028B2 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		B7AC8A832C9C2F5F00DE2E4A /* newVideo2Swap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newVideo2Swap.swift; sourceTree = "<group>"; };
+		B7AC8A842C9C2F5F00DE2E4A /* newVideo2Swap.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = newVideo2Swap.xib; sourceTree = "<group>"; };
 		B7D9087A2C60F87700458A21 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		B7D9087B2C60F87700458A21 /* ReportViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportViewController.xib; sourceTree = "<group>"; };
 		B7F645372C5CCB4700261A02 /* ListToProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListToProfileViewController.swift; sourceTree = "<group>"; };
@@ -1165,7 +1169,6 @@
 		E67DF4612B551FB10074D573 /* selectcontroller */ = {
 			isa = PBXGroup;
 			children = (
-				E66C93602B4E559600B74491 /* mhchinh.storyboard */,
 				E67DF4622B551FD80074D573 /* StoryboardPageTabMenuViewController.swift */,
 				E67DF4642B5520410074D573 /* testViewController.swift */,
 				E67DF4662B5520B70074D573 /* mhtestViewController.swift */,
@@ -1182,6 +1185,7 @@
 				E66C93612B4E559600B74491 /* cell */,
 				E66C93702B4E559600B74491 /* modal */,
 				E66C93732B4E559600B74491 /* mhchinhController.swift */,
+				E66C93602B4E559600B74491 /* mhchinh.storyboard */,
 			);
 			path = Video;
 			sourceTree = "<group>";
@@ -1261,6 +1265,8 @@
 				E64E47912B5AEA64007DDAD0 /* detailNewvideoSwap.xib */,
 				E64E47BF2B5E5147007DDAD0 /* newVideo2.swift */,
 				E64E47C02B5E5147007DDAD0 /* newVideo2.xib */,
+				B7AC8A832C9C2F5F00DE2E4A /* newVideo2Swap.swift */,
+				B7AC8A842C9C2F5F00DE2E4A /* newVideo2Swap.xib */,
 			);
 			path = newvideo;
 			sourceTree = "<group>";
@@ -1421,6 +1427,7 @@
 				E68D67272B5F9FCE00E410FC /* hightlightmain.xib in Resources */,
 				B7552F552C5D19DA0017722F /* EditProfileViewController.xib in Resources */,
 				E676F5D92B60FDA300C96049 /* celleventduoi.xib in Resources */,
+				B7AC8A862C9C2F5F00DE2E4A /* newVideo2Swap.xib in Resources */,
 				B75C30692C53D19C00B60DB2 /* Starborn.ttf in Resources */,
 				B78524BF2C7D9C41000028B2 /* ImageSwap.xib in Resources */,
 				E66C94022B4E559600B74491 /* DetailHowToVC.xib in Resources */,
@@ -1578,6 +1585,7 @@
 				E6C6E9C42B59129E0055D260 /* ImagedModel.swift in Sources */,
 				B735F7B42C6202B200D8EAAD /* EventCommentTableViewCell.swift in Sources */,
 				E66C94112B4E559600B74491 /* RegisterAPI.swift in Sources */,
+				B7AC8A852C9C2F5F00DE2E4A /* newVideo2Swap.swift in Sources */,
 				E66C93262B4E556A00B74491 /* HomeModel.swift in Sources */,
 				E6C6E99A2B565B7A0055D260 /* cacluachonimageclv.swift in Sources */,
 				E66C94162B4E559600B74491 /* LoginServiceConfiguration.swift in Sources */,

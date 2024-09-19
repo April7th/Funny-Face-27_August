@@ -44,6 +44,7 @@ class DetailEventsViewController: UIViewController {
     @IBOutlet weak var detailEventTableView: UITableView!
     @IBOutlet weak var buttonEnter: UIButton!
     @IBOutlet weak var commentView: UIView!
+    @IBOutlet weak var eventBottomView: UIView!
     
     var listFilterdId: [String] = []
 
@@ -62,6 +63,8 @@ class DetailEventsViewController: UIViewController {
         
     }
     override func viewDidLoad() {
+        eventBottomView.isHidden = true
+        
         super.viewDidLoad()
         self.nameDetailLabel.textColor = UIColor.black
         self.titleLabel.textColor = UIColor.white

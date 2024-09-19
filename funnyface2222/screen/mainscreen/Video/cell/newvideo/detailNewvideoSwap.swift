@@ -23,6 +23,11 @@ class detailNewvideoSwap: UIViewController {
     @IBOutlet weak var buttonDownloadSwap: UIButton!
     @IBOutlet weak var buttonShare: UIButton!
     @IBOutlet weak var labelUserName: UILabel!
+    
+    @IBOutlet weak var saveToMyCollectionButton: UIButton!
+    @IBOutlet weak var downloadButton: UIButton!
+
+    
    // @IBOutlet weak var imageUserAvatar: UIImageView!
     var hasVideoEnded: Bool = false
    // private let autoReplay = true
@@ -186,6 +191,17 @@ class detailNewvideoSwap: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let tapProfile = UITapGestureRecognizer(target: self, action: #selector(self.tabForViewProfile))
+        
+        labelUserName.isHidden = true
+        
+        saveToMyCollectionButton.titleLabel?.font = .quickSandBold(size: 14)
+        saveToMyCollectionButton.layer.cornerRadius = 10
+        saveToMyCollectionButton.layer.masksToBounds = true
+        
+        downloadButton.titleLabel?.font = .quickSandBold(size: 14)
+        downloadButton.layer.cornerRadius = 10
+        downloadButton.layer.masksToBounds = true
+        
         labelUserName.isUserInteractionEnabled = true
         labelUserName.addGestureRecognizer(tapProfile)
         let tapProfile2 = UITapGestureRecognizer(target: self, action: #selector(self.tabForViewProfile))
@@ -219,9 +235,9 @@ class detailNewvideoSwap: UIViewController {
         }
         playerView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         playerView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        playerView.heightAnchor.constraint(equalTo: playerView.widthAnchor, multiplier: 0.5).isActive = true
+        playerView.heightAnchor.constraint(equalTo: playerView.widthAnchor, multiplier: 1.1).isActive = true
         if #available(iOS 11.0, *) {
-            playerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 100).isActive = true
+            playerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 120).isActive = true
         } else {
             playerView.topAnchor.constraint(equalTo: view.topAnchor, constant: 130).isActive = true
         }
@@ -252,34 +268,34 @@ class detailNewvideoSwap: UIViewController {
         playerView.playbackDelegate = self
         playerView.set(item: item)
         //_______________________________________________________
-        view.addSubview(playerGocView)
-        playerGocView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        playerGocView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        playerGocView.heightAnchor.constraint(equalTo: playerGocView.widthAnchor, multiplier: 0.5).isActive = true
-        if #available(iOS 11.0, *) {
-            playerGocView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 350).isActive = true
-        } else {
-            playerGocView.topAnchor.constraint(equalTo: view.topAnchor, constant: 500).isActive = true
-        }
-        controlGocPanel.delegate = self
-        playerGocView.addControlPanel(controlGocPanel)
-        if !autoGocReplay {
-            replayGocPanel.delegate = self
-            playerGocView.addReplayPanel(replayGocPanel)
-        }
-        if !autoGocPlay {
-            let button = UIButton()
-            button.tintColor = .white
-            button.setImage(UIImage(named: "play-100")?.withRenderingMode(.alwaysTemplate), for: .normal)
-            playerGocView.manualPlayButton = button
-        }
-        let itemGoc = TrailerPlayerItem(
-            url: URL(string: itemDataSend.link_video_goc ?? ""),
-            thumbnailUrl: URL(string: "https://github.com/sonnh7289/python3-download/blob/main/oldvideologo.jpeg?raw=true"),
-            autoPlay: autoPlay,
-            autoReplay: autoReplay)
-        playerGocView.playbackDelegate = self
-        playerGocView.set(item: itemGoc)
+//        view.addSubview(playerGocView)
+//        playerGocView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+//        playerGocView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+//        playerGocView.heightAnchor.constraint(equalTo: playerGocView.widthAnchor, multiplier: 0.5).isActive = true
+//        if #available(iOS 11.0, *) {
+//            playerGocView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 350).isActive = true
+//        } else {
+//            playerGocView.topAnchor.constraint(equalTo: view.topAnchor, constant: 500).isActive = true
+//        }
+//        controlGocPanel.delegate = self
+//        playerGocView.addControlPanel(controlGocPanel)
+//        if !autoGocReplay {
+//            replayGocPanel.delegate = self
+//            playerGocView.addReplayPanel(replayGocPanel)
+//        }
+//        if !autoGocPlay {
+//            let button = UIButton()
+//            button.tintColor = .white
+//            button.setImage(UIImage(named: "play-100")?.withRenderingMode(.alwaysTemplate), for: .normal)
+//            playerGocView.manualPlayButton = button
+//        }
+//        let itemGoc = TrailerPlayerItem(
+//            url: URL(string: itemDataSend.link_video_goc ?? ""),
+//            thumbnailUrl: URL(string: "https://github.com/sonnh7289/python3-download/blob/main/oldvideologo.jpeg?raw=true"),
+//            autoPlay: autoPlay,
+//            autoReplay: autoReplay)
+//        playerGocView.playbackDelegate = self
+//        playerGocView.set(item: itemGoc)
     }
 }
 

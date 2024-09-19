@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,8 +14,10 @@
                 <outlet property="buttonBack" destination="vHg-HV-FLP" id="RXm-tZ-JRq"/>
                 <outlet property="buttonDownloadSwap" destination="2en-BB-bkg" id="Q9O-5H-PAQ"/>
                 <outlet property="buttonShare" destination="cq6-kx-C1A" id="YuZ-cd-bEZ"/>
+                <outlet property="downloadButton" destination="R4p-r6-oMi" id="lE3-yy-uuj"/>
                 <outlet property="imageViewCover" destination="le5-3K-Y7Z" id="7L0-Fm-g28"/>
                 <outlet property="labelUserName" destination="02P-33-6e9" id="s7Q-79-WNL"/>
+                <outlet property="saveToMyCollectionButton" destination="AHt-Pt-Bwh" id="n6E-7n-fOC"/>
                 <outlet property="view" destination="LXq-KJ-2hW" id="2z7-3M-AAT"/>
             </connections>
         </placeholder>
@@ -64,10 +66,10 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4p-r6-oMi">
-                    <rect key="frame" x="238" y="725" width="135" height="35"/>
+                    <rect key="frame" x="236.66666666666663" y="725" width="136.33333333333337" height="35"/>
                     <color key="backgroundColor" systemColor="systemGreenColor"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="dowload video">
+                    <buttonConfiguration key="configuration" style="plain" title="Dowload video">
                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </buttonConfiguration>
                     <connections>

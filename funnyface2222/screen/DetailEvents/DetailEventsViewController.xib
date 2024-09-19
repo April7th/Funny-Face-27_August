@@ -27,6 +27,7 @@
                 <outlet property="descriptionLabel" destination="s6V-78-28K" id="YOL-Jr-IXF"/>
                 <outlet property="detailEventTableView" destination="yqc-me-Ayx" id="t8K-Q5-qt4"/>
                 <outlet property="detailImage" destination="Qje-FU-pFZ" id="icD-9N-deM"/>
+                <outlet property="eventBottomView" destination="Mnc-0v-ZuF" id="WTC-VE-8K5"/>
                 <outlet property="keyboardScroll" destination="Zar-FN-MBP" id="3fD-2Y-aeK"/>
                 <outlet property="nameDetailLabel" destination="DWB-y5-RGz" id="r7B-AP-KJI"/>
                 <outlet property="titleLabel" destination="p23-Ch-RKg" id="wD8-6q-pXo"/>
@@ -421,7 +422,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <viewLayoutGuide key="safeArea" id="Xqa-3Q-vWQ"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="593" y="-185"/>
+            <point key="canvasLocation" x="1062" y="-192"/>
         </view>
     </objects>
     <resources>

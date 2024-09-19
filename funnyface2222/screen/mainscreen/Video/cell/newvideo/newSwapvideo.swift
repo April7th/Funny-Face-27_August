@@ -73,7 +73,7 @@ class newSwapvideo: UIViewController {
         self.dismiss(animated: true)
     }
     @IBAction func nextStep(){
-        let vc = newVideo2(nibName: "newVideo2", bundle: nil)
+        let vc = newVideo2Swap(nibName: "newVideo2Swap", bundle: nil)
         print("video url.  ")
         print(self.videoUrl)
         print("video url.  ")

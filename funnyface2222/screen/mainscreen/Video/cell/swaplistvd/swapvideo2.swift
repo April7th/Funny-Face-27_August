@@ -51,14 +51,6 @@ class swapvideo2: UIViewController {
             self.detectFaces(in: self.selectedImage)
 
         }else{
-//            self.circularSlider.maximumValue = 180.0
-//            var timeCount = 0.0
-//            self.timerNow = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { (_) in
-//                timeCount = timeCount + 1
-//                let tile = Int((timeCount / 180.0) * 100.0)
-//                self.percentLabel.text = String(tile) + " %"
-//                self.updatePlayerUI(withCurrentTime: CGFloat(timeCount))
-//            }
             
             for x in 0..<100 {
                 
@@ -78,7 +70,6 @@ class swapvideo2: UIViewController {
                     vc.modalPresentationStyle = .fullScreen //or .overFullScreen for transparency
                     self.present(vc, animated: true, completion: nil)
                 }
-                
             }
         }
         
